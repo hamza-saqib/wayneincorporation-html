@@ -27,7 +27,7 @@
     <!-- =========================
         Header 
     =========================== -->
-    <header class="header header-transparent">
+    <header class="header header-light">
       <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container">
           <button type="button" class="action__btn action__btn-burgerMenu mr-30 d-none d-lg-block">
@@ -42,7 +42,7 @@
           </button>
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav mr-auto ml-auto">
-              <li class="nav__item  has-dropdown">
+              <li class="nav__item has-dropdown">
                 <a href="index.html" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Home</a>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
@@ -56,7 +56,7 @@
                   </li><!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
-              <li class="nav__item  has-dropdown">
+              <li class="nav__item has-dropdown">
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Company</a>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
@@ -82,7 +82,7 @@
                   </li><!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
-              <li class="nav__item  has-dropdown">
+              <li class="nav__item has-dropdown">
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">IT Solutions</a>
                 <ul class="dropdown-menu wide-dropdown-menu">
                   <li class="nav__item">
@@ -138,8 +138,8 @@
                   </li><!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
-              <li class="nav__item  has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">News&Media</a>
+              <li class="nav__item has-dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">News&Media</a>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
                     <a href="blog.html" class="nav__item-link">Our Blog</a>
@@ -161,7 +161,7 @@
                   </li><!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
-              <li class="nav__item  has-dropdown">
+              <li class="nav__item has-dropdown">
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Features</a>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
@@ -179,7 +179,7 @@
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
               <li class="nav__item">
-                <a href="contact-us.html" class="nav__item-link">Contacts</a>
+                <a href="contact-us.html" class="nav__item-link active">Contacts</a>
               </li><!-- /.nav-item -->
             </ul><!-- /.navbar-nav -->
           </div><!-- /.navbar-collapse -->
@@ -198,216 +198,150 @@
       </nav><!-- /.navabr -->
     </header><!-- /.Header -->
 
-    <!-- ========================
-       page title 
-    =========================== -->
-    <section class="page-title page-title-layout16 bg-overlay bg-parallax">
-      <div class="bg-img"><img src="assets/images/page-titles/12.jpg" alt="background"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <h1 class="pagetitle__heading mb-10">Our Blog</h1>
-            <nav>
-              <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Blog</li>
-              </ol>
-            </nav>
-          </div><!-- /.col-lg-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.page-title -->
+    <!-- ========================= 
+            Google Map
+    =========================  -->
+    <section class="google-map py-0">
+      <div id="map" style="height: 500px;"></div>
+      <script src="assets/js/google-map.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+      <!-- CLICK HERE (https://developers.google.com/maps/documentation/embed/get-api-key) TO  LERAN MORE ABOUT GOOGLE MAPS API KEY -->
+    </section><!-- /.GoogleMap -->
 
-    <!-- ======================
-      Blog Grid
-    ========================= -->
-    <section class="blog-grid">
+    <!-- ==========================
+        contact layout 1
+    =========================== -->
+    <section class="contact-layout1">
       <div class="container">
         <div class="row">
-          <!-- Blog Item #1 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="post-item">
-              <div class="post-item__img">
-                <a href="blog-single-post.html">
-                  <img src="assets/images/blog/grid/1.jpg" alt="blog image">
-                </a>
-              </div><!-- /.blog-img -->
-              <div class="post-item__content">
-                <div class="post-item__meta d-flex flex-wrap">
-                  <div class="post-item__meta__cat">
-                    <a href="#">Consulting</a><a href="#">Sales</a>
-                  </div><!-- /.blog-meta-cat -->
-                  <span class="post-item__meta__date">May 13, 2020</span>
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <form class="contact-panel__form" method="post" action="assets/php/contact.php" id="contactForm">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h4 class="contact-panel__title">Get In Touch</h4>
                 </div>
-                <h4 class="post-item__title"><a href="#">Five Ways to Develop a World Class Sales Operations
-                    Function</a>
-                </h4>
-                <p class="post-item__desc">Outsourcing IT infrastructure is a concept that has been around for a while.
-                  Characterized in terms of technicians and engineers, workstations and servers, the idea of outsourcing
-                  your basic IT needs...
-                </p>
-                <a href="blog-single-post.html" class="btn btn__secondary btn__link">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.blog-content -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- Blog Item #2 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="post-item">
-              <div class="post-item__img">
-                <a href="blog-single-post.html">
-                  <img src="assets/images/blog/grid/2.jpg" alt="blog image">
-                </a>
-              </div><!-- /.blog-img -->
-              <div class="post-item__content">
-                <div class="post-item__meta d-flex flex-wrap">
-                  <div class="post-item__meta__cat">
-                    <a href="#">Tech</a><a href="#">Communications</a>
-                  </div><!-- /.blog-meta-cat -->
-                  <span class="post-item__meta__date">April 17, 2020</span>
-                </div>
-                <h4 class="post-item__title"><a href="#">Succession Risks That Threaten Your Leadership Strategy</a>
-                </h4>
-                <p class="post-item__desc">Today’s organizations need a quality bench of leaders to drive business
-                  outcomes and satisfy employees, customers and investors who now demand more transparency and
-                  accountability...
-                </p>
-                <a href="blog-single-post.html" class="btn btn__secondary btn__link">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.blog-content -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- Blog Item #3 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="post-item">
-              <div class="post-item__img">
-                <a href="blog-single-post.html">
-                  <img src="assets/images/blog/grid/3.jpg" alt="blog image">
-                </a>
-              </div><!-- /.blog-img -->
-              <div class="post-item__content">
-                <div class="post-item__meta d-flex flex-wrap">
-                  <div class="post-item__meta__cat">
-                    <a href="#">Digital Business</a><a href="#">Cloud</a>
-                  </div><!-- /.blog-meta-cat -->
-                  <span class="post-item__meta__date">March 20, 2020</span>
-                </div>
-                <h4 class="post-item__title"><a href="#">What Do Employee Engagement Surveys Tell You About
-                    Employee?</a>
-                </h4>
-                <p class="post-item__desc">Outsourcing IT infrastructure is a concept that has been around for a while.
-                  Characterized in terms of technicians and engineers, workstations and servers, the idea of outsourcing
-                  your basic IT needs...
-                </p>
-                <a href="blog-single-post.html" class="btn btn__secondary btn__link">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.blog-content -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- Blog Item #4 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="post-item">
-              <div class="post-item__img">
-                <a href="blog-single-post.html">
-                  <img src="assets/images/blog/grid/4.jpg" alt="blog image">
-                </a>
-              </div><!-- /.blog-img -->
-              <div class="post-item__content">
-                <div class="post-item__meta d-flex flex-wrap">
-                  <div class="post-item__meta__cat">
-                    <a href="#">Security</a><a href="#">Support</a>
-                  </div><!-- /.blog-meta-cat -->
-                  <span class="post-item__meta__date">Feb 9, 2020</span>
-                </div>
-                <h4 class="post-item__title"><a href="#">New Remote Workers Visible to Security Operations? </a>
-                </h4>
-                <p class="post-item__desc">Many are utilizing remote working systems that have not been operationally
-                  tested as part of their core security operations monitoring, likely result is fewer security alerts
-                  and issues...
-                </p>
-                <a href="blog-single-post.html" class="btn btn__secondary btn__link">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.blog-content -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- Blog Item #5 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="post-item">
-              <div class="post-item__img">
-                <a href="blog-single-post.html">
-                  <img src="assets/images/blog/grid/5.jpg" alt="blog image">
-                </a>
-              </div><!-- /.blog-img -->
-              <div class="post-item__content">
-                <div class="post-item__meta d-flex flex-wrap">
-                  <div class="post-item__meta__cat">
-                    <a href="#">Insights</a><a href="#">Costs</a>
-                  </div><!-- /.blog-meta-cat -->
-                  <span class="post-item__meta__date">Feb 3, 2020</span>
-                </div>
-                <h4 class="post-item__title"><a href="#">Market Insights to Manage People Related Costs</a>
-                </h4>
-                <p class="post-item__desc">If economies stay closed, some of the hardest decisions for leaders still lie
-                  ahead, and yet most leaders lack the data they need to make informed decisions about their
-                  workforce...
-                </p>
-                <a href="blog-single-post.html" class="btn btn__secondary btn__link">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.blog-content -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- Blog Item #6 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="post-item">
-              <div class="post-item__img">
-                <a href="blog-single-post.html">
-                  <img src="assets/images/blog/grid/6.jpg" alt="blog image">
-                </a>
-              </div><!-- /.blog-img -->
-              <div class="post-item__content">
-                <div class="post-item__meta d-flex flex-wrap">
-                  <div class="post-item__meta__cat">
-                    <a href="#">Sales</a><a href="#">Sales</a>
-                  </div><!-- /.blog-meta-cat -->
-                  <span class="post-item__meta__date">Jan 30, 2020</span>
-                </div>
-                <h4 class="post-item__title"><a href="#">Embrace Proactive Customer Experience in the Business</a>
-                </h4>
-                <p class="post-item__desc">Concerns like these can raise volumes, increase expenses and strain your
-                  staff. And they’re still just the tip of the iceberg, because customers are delaying or canceling
-                  purchases...
-                </p>
-                <a href="blog-single-post.html" class="btn btn__secondary btn__link">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.blog-content -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 text-center">
-            <nav class="pagination-area">
-              <ul class="pagination justify-content-center">
-                <li><a class="current" href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#"><i class="icon-arrow-right"></i></a></li>
-              </ul>
-            </nav><!-- .pagination-area -->
-          </div><!-- /.col-lg-12 -->
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <label for="contact-name">Name (required)</label>
+                    <input type="text" class="form-control" placeholder="Name" id="contact-name" name="contact-name"
+                      required>
+                  </div>
+                </div><!-- /.col-lg-6 -->
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <label for="contact-email">Email (required)</label>
+                    <input type="email" class="form-control" placeholder="Email" id="contact-email" name="contact-email"
+                      required>
+                  </div>
+                </div><!-- /.col-lg-6 -->
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <label for="contact-Phone">Phone (required)</label>
+                    <input type="text" class="form-control" placeholder="Phone" id="contact-Phone" name="contact-phone"
+                      required>
+                  </div>
+                </div><!-- /.col-lg-6 -->
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <label for="contact-website">Website (optional)</label>
+                    <input type="text" class="form-control" placeholder="Website (optional)" id="contact-website"
+                      name="contact-website">
+                  </div>
+                </div><!-- /.col-lg-6 -->
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <div class="form-group mb-20">
+                    <label for="contact-message">Additional Details (optional)</label>
+                    <textarea class="form-control" placeholder="Describe your inquirey!" id="contact-message"
+                      name="contact-message"></textarea>
+                  </div>
+                  <div class="custom-control custom-checkbox d-flex align-items-center  mb-20">
+                    <input type="checkbox" class="custom-control-input" id="terms">
+                    <label class="custom-control-label" for="terms">I accept the privacy and terms.</label>
+                  </div>
+                  <button type="submit" class="btn btn__secondary btn__block ">Submit Request</button>
+                  <div class="contact-result"></div>
+                </div><!-- /.col-lg-12 -->
+              </div><!-- /.row -->
+            </form>
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-12 col-md-12 col-lg-5 offset-lg-1">
+            <div class="contact-panel__info bg-overlay bg-overlay-primary">
+              <div class="bg-img"><img src="assets/images/contact/1.jpg" alt="banner"></div>
+              <div class="contact-block">
+                <h5 class="contact-block__title">Our Location</h5>
+                <ul class="contact-block__list list-unstyled">
+                  <li>2307 Beverley Rd Brooklyn, New York 11226 United States.</li>
+                </ul>
+              </div><!-- /.contact-panel__info__block -->
+              <div class="contact-block">
+                <h5 class="contact-block__title">Quick Contact</h5>
+                <ul class="contact-block__list list-unstyled">
+                  <li><a href="mailto:Mintech@7oroof.com"></a>Email: Mintech@7oroof.com</li>
+                  <li><a href="mailto:Mintech@7oroof.com"></a>Support: Mintech@7oroof.com</li>
+                </ul>
+              </div><!-- /.contact-panel__info__block -->
+              <div class="contact-block">
+                <h5 class="contact-block__title">Opening Hours</h5>
+                <ul class="contact-block__list list-unstyled">
+                  <li>Monday - Friday</li>
+                  <li>09:00 AM - 06:00 PM</li>
+                </ul>
+              </div><!-- /.contact-panel__info__block -->
+              <a href="contacs.html" class="btn btn__white btn__bordered btn__icon btn__xl">
+                <span>Find Your Solution</span>
+                <i class="icon-arrow-right"></i>
+              </a>
+            </div>
+          </div><!-- /.col-lg-5 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
-    </section><!-- /.blog Grid -->
+    </section><!-- /.contact layout 1 -->
+
+    <!-- ==========================
+       Contact Info
+    ============================ -->
+    <section class="contact-info pt-0 pb-70">
+      <div class="container">
+        <div class="row">
+          <!-- Contact panel #1 -->
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="contact-info-box">
+              <h4 class="contact__info-box-title">London Office</h4>
+              <ul class="contact__info-list list-unstyled">
+                <li>Email: <a href="mailto:Mintech@7oroof.com">Mintech@7oroof.com</a></li>
+                <li>Address: 2307 Beverley Rd Brooklyn, NY</li>
+                <li>Phone: <a href="tel:5565454117">55 654 541 17</a></li>
+                <li>Hours: Mon-Fri: 8am – 7pm</li>
+              </ul><!-- /.contact__info-list -->
+            </div><!-- /.contact-info-box -->
+          </div><!-- /.col-lg-4 -->
+          <!-- Contact panel #2 -->
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="contact-info-box">
+              <h4 class="contact__info-box-title">Berlin Office</h4>
+              <ul class="contact__info-list list-unstyled">
+                <li>Email: <a href="mailto:Mintech@7oroof.com">Mintech@7oroof.com</a></li>
+                <li>Address: 2307 Beverley Rd Brooklyn, NY</li>
+                <li>Phone: <a href="tel:5565454117">55 654 541 17</a></li>
+                <li>Hours: Mon-Fri: 8am – 7pm</li>
+              </ul><!-- /.contact__info-list -->
+            </div><!-- /.contact-info-box -->
+          </div><!-- /.col-lg-4 -->
+          <!-- Contact panel #3 -->
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="contact-info-box">
+              <h4 class="contact__info-box-title">Manchester Office</h4>
+              <ul class="contact__info-list list-unstyled">
+                <li>Email: <a href="mailto:Mintech@7oroof.com">Mintech@7oroof.com</a></li>
+                <li>Address: 2307 Beverley Rd Brooklyn, NY</li>
+                <li>Phone: <a href="tel:5565454117">55 654 541 17</a></li>
+                <li>Hours: Mon-Fri: 8am – 7pm</li>
+              </ul><!-- /.contact__info-list -->
+            </div><!-- /.contact-info-box -->
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.Contact Info -->
 
     <!-- ========================
       Footer
