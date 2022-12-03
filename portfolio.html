@@ -142,10 +142,10 @@
                                     <a href="#" class="nav-link dropdown-toggle active">Portfolio</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="portfolio.html" class="nav-link active">Portfolio One</a>
+                                            <a href="portfolio.html" class="nav-link">Portfolio One</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="portfolio-two.html" class="nav-link">Portfolio Two</a>
+                                            <a href="portfolio-two.html" class="nav-link active">Portfolio Two</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -336,10 +336,22 @@
         <!-- Portfolio Title Section End -->
 
         <!-- Portfolio Section Start -->
-        <section class="portfolio-section pt-100 pb-70">
+        <section class="portfolio-section portfolio-style-two pt-100 pb-70">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
+
+                <div class="portfolio-menu text-center">
+                    <ul>
+                        <li class="filter" data-filter="all">All</li>
+                        <li class="filter" data-filter=".online-business">Online Business</li>
+                        <li class="filter" data-filter=".digital-marketing">Digital Marketing</li>
+                        <li class="filter" data-filter=".writing">Content Writing</li>
+                        <li class="filter" data-filter=".seo">SEO</li>
+                    </ul>
+                </div>
+
+
+                <div id="Container" class="row">
+                    <div class="col-lg-3 col-sm-6 mix online-business">
                         <div class="portfolio-item">
                             <div class="portfolio-img">
                                 <img src="assets/img/portfolio/1.jpg" alt="portfolio image">
@@ -354,7 +366,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-3 col-sm-6 mix digital-marketing">
                         <div class="portfolio-item">
                             <div class="portfolio-img">
                                 <img src="assets/img/portfolio/2.jpg" alt="portfolio image">
@@ -369,12 +381,12 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6 col-sm-8">
+                    <div class="col-lg-6 col-sm-8 mix online-business">
                         <div class="portfolio-item">
                             <div class="portfolio-img">
                                 <img src="assets/img/portfolio/3.jpg" alt="portfolio image">
                                 <div class="portfolio-text">
-                                    <h3>Business Planning</h3>
+                                    <h3>Online Business</h3>
                                     <a href="#" class="portfolio-btn">
                                         Read More
                                         <i class="flaticon-right-chevron"></i>
@@ -384,7 +396,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-sm-4">
+                    <div class="col-lg-3 col-sm-4 mix writing">
                         <div class="portfolio-item">
                             <div class="portfolio-img">
                                 <img src="assets/img/portfolio/4.jpg" alt="portfolio image">
@@ -399,7 +411,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6 col-sm-8">
+                    <div class="col-lg-6 col-sm-8 mix">
                         <div class="portfolio-item">
                             <div class="portfolio-img">
                                 <img src="assets/img/portfolio/5.jpg" alt="portfolio image">
@@ -414,7 +426,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-sm-4">
+                    <div class="col-lg-3 col-sm-4 mix seo">
                         <div class="portfolio-item">
                             <div class="portfolio-img">
                                 <img src="assets/img/portfolio/6.jpg" alt="portfolio image">
